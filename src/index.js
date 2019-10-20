@@ -1,1 +1,1 @@
-console.log('Hello ever running Node.js project with Babel ENV.');
+console.log('Hello Webpack.');
