@@ -211,6 +211,7 @@ typings/
 
 # react / gatsby 
 public/
+dist/
 
 # vuepress build output
 .vuepress/dist
@@ -246,9 +247,12 @@ $RECYCLE.BIN/
 *.msix
 *.msm
 *.msp
+*.msp
 
 # Windows shortcuts
 *.lnk
+
+
 
 # End of https://www.gitignore.io/api/linux,windows,macos,jetbrains+all,node
 n

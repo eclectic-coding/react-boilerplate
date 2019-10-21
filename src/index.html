@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>$Title$</title>
+    <title><%= htmlWebpackPlugin.options.title %></title>
 </head>
 <body>
-$END$
+<div>
+    <h1>
+        <%= htmlWebpackPlugin.options.title %>
+        <div id="app"></div>
+    </h1>
+</div>
+
 </body>
 </html>

@@ -1,4 +1,8 @@
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+
 module.exports = {
+  devtool: 'source-map',
   entry: './src/index.js',
   module: {
     rules: [
@@ -17,8 +21,15 @@ module.exports = {
     publicPath: '/',
     filename: 'bundle.js'
   },
-  // 3
+  plugins: [
+    new CleanWebpackPlugin(),
+    new HtmlWebpackPlugin({
+      title: 'Hello Webpack bundled JavaScript Project',
+      template: './src/index.html'
+    })
+  ],
   devServer: {
-    contentBase: './dist'
+    contentBase: './dist',
+    hot: true
   }
 };
