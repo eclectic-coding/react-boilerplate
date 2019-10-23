@@ -8,6 +8,6 @@ module.exports = {
     new Dotenv({
       path: './.env.development',
     }),
-    new OpenBrowserPlugin({ url: 'http://localhost:8080' })
+    new OpenBrowserPlugin({ url: 'http://localhost:3000' })
   ],
 }

@@ -39,6 +39,8 @@ module.exports = {
     filename: 'bundle.js'
   },
   devServer: {
-    contentBase: './dist'
+    contentBase: './dist',
+    compress: true,
+    port: 3000
   }
 }
