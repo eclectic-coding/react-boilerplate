@@ -1,6 +1,7 @@
 const path = require('path')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+
 module.exports = {
   entry: './src/index.js',
   module: {
@@ -13,9 +14,6 @@ module.exports = {
       {
         test: /\.(s*)css$/i,
         use: ['style-loader', 'css-loader', 'sass-loader'],
-        options: {
-          modules: true
-        }
       },
       {
         test: /\.(jpg|png)$/,
