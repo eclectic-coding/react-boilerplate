@@ -11,17 +11,11 @@ module.exports = {
         use: ['babel-loader', 'eslint-loader']
       },
       {
-        test: /\.css$/i,
-        exclude: /node_modules/,
-        use: [
-          'style-loader',
-          {
-            loader: 'css-loader',
-            options: {
-              modules: true
-            }
-          }
-        ]
+        test: /\.(s*)css$/i,
+        use: ['style-loader', 'css-loader', 'sass-loader'],
+        options: {
+          modules: true
+        }
       },
       {
         test: /\.(jpg|png)$/,
