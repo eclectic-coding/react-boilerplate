@@ -12,16 +12,28 @@ module.exports = {
         use: ['babel-loader', 'eslint-loader']
       },
       {
-        test: /\.css$/i,
-        exclude: /node_modules/,
+        test: /\.(css|scss)$/i,
         use: [
-          'style-loader',
+          {
+            loader: 'style-loader',
+          },
           {
             loader: 'css-loader',
             options: {
+              importLoaders: 1,
               modules: true,
             },
           },
+          {
+            loader: 'sass-loader',
+            options: {
+              implementation: require('dart-sass'),
+              sassOptions: {
+                fiber: false,
+              },
+              sourceMap: true,
+            }
+          }
         ],
       },
       {
