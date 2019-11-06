@@ -2248,10 +2248,10 @@ damerau-levenshtein@^1.0.4:
   resolved "https://registry.yarnpkg.com/damerau-levenshtein/-/damerau-levenshtein-1.0.5.tgz#780cf7144eb2e8dbd1c3bb83ae31100ccc31a414"
   integrity sha512-CBCRqFnpu715iPmw1KrdOrzRqbdFwQTwAWyyyYS42+iAgHCuXZ+/TdMgQkUENPomxEz9z1BEzuQU2Xw0kUuAgA==
 
-dart-sass@1.23.1:
-  version "1.23.1"
-  resolved "https://registry.yarnpkg.com/dart-sass/-/dart-sass-1.23.1.tgz#409d25f1983c3028d124eb8309014430dd14a2a6"
-  integrity sha512-r6w/VOpq3/fqYJhOarzMz7zXhMudbxoZXL4I/Gn0LNO3Er1saOuQAhqPWOX2fRi8qZMNGo2Ax13xjt1UxX/eIA==
+dart-sass@1.23.3:
+  version "1.23.3"
+  resolved "https://registry.yarnpkg.com/dart-sass/-/dart-sass-1.23.3.tgz#fa09a9c13e49dd52d7587c472af4d10ecbc13017"
+  integrity sha512-Otz8qa0Tu3cN2QlAHhj4hreEAiC9/lrRvlRmQBcYWijv6ZxgLXih2HXlCSW23BkoHtKIo6dMHXowb6cHbV/P6A==
   dependencies:
     chokidar ">=2.0.0 <4.0.0"
 
