@@ -30,7 +30,40 @@ The starting point where these tutorials:
 - [How to use Images with Webpack](https://www.robinwieruch.de/webpack-images)
 
 ### Added Features
+- Automatic starting of development server via Webpack Plugin [OpenBrowserPlugin](https://github.com/baldore/open-browser-webpack-plugin)
+- Added SASS support with the canonical SASS release [Dart-Sass](https://github.com/sass/dart-sass). Dart-sass is my preference as it has the latest feature set of SASS over [Node-sass](https://github.com/sass/node-sass)
 
+## Installation
+So, when to start a new React project, instead of usign Create-React-App, clone this repository as your starting point:
+```
+git clone git@github.com:eclectic-coding/react-boilerplate.git
+```
+Then install packages:
+```
+yarn
+or 
+npm install
+```
+Start the `DEV` server using `yarn start` or `npm run dev`*.
+*Using the clone procedure, you may want to delete `.git/` and reinitialize `git` for your own project history.
 
 ### TODO List
 - Add SVG support
+
+## Contributing
+
+Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
+
+## Versioning
+
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags).
+
+## Authors
+
+* **Chuck Smith** - *Initial work* - [Eclectic-Coding](https://github.com/PurpleBooth)
+
+See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
