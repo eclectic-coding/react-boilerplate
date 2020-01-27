@@ -27,7 +27,8 @@ module.exports = {
           {
             loader: 'sass-loader',
             options: {
-              implementation: require('sass'),
+              // eslint-disable-next-line global-require
+              implementation: require('node-sass'),
               sassOptions: {
                 fiber: false,
               },
@@ -50,7 +51,7 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
-      title: 'Hello Webpack bundled JavaScript Project',
+      title: '',
       template: './src/index.html'
     })
   ],

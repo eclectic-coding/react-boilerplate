@@ -1,7 +1,7 @@
 import React from 'react'
-import styles from './style.scss'
+import './style.scss'
 
-const App = ({ title }) =>
-  <div className={styles.title}>{title}</div>;
+const App = () =>
+  <div className="title">Hello from App.js</div>;
 
 export default App;
