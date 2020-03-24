@@ -15,14 +15,14 @@ module.exports = {
         test: /\.(css|scss)$/i,
         use: [
           {
-            loader: 'style-loader',
+            loader: 'style-loader'
           },
           {
             loader: 'css-loader',
             options: {
               importLoaders: 1,
-              modules: true,
-            },
+              modules: true
+            }
           },
           {
             loader: 'sass-loader',
@@ -30,12 +30,12 @@ module.exports = {
               // eslint-disable-next-line global-require
               implementation: require('node-sass'),
               sassOptions: {
-                fiber: false,
+                fiber: false
               },
-              sourceMap: true,
+              sourceMap: true
             }
           }
-        ],
+        ]
       },
       {
         test: /\.(jpg|png)$/,
@@ -51,8 +51,13 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
-      title: '',
-      template: './src/index.html'
+      // eslint-disable-next-line global-require,import/no-extraneous-dependencies
+      template: require('html-webpack-template'),
+      title: 'React Boilerplate',
+      inject: false,
+      appMountId: 'app',
+      mobile: true,
+      lang: 'en_US'
     })
   ],
   output: {
@@ -61,7 +66,7 @@ module.exports = {
     filename: 'bundle.js'
   },
   devServer: {
-    contentBase: './dist',
+    contentBase: path.join(__dirname, 'dist'),
     compress: true,
     port: 3000
   }
