@@ -55,7 +55,7 @@
     "eslint-plugin-react": "7.19.0",
     "html-webpack-template": "^6.2.0",
     "husky": "4.2.5",
-    "lint-staged": "10.1.7",
+    "lint-staged": "10.2.0",
     "open-browser-webpack-plugin": "0.0.5",
     "prettier": "2.0.5",
     "pretty-quick": "2.0.1",
