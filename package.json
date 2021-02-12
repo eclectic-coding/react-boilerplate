@@ -36,9 +36,9 @@
     ]
   },
   "devDependencies": {
-    "@babel/core": "7.12.13",
-    "@babel/node": "7.12.13",
-    "@babel/preset-env": "7.12.13",
+    "@babel/core": "7.12.16",
+    "@babel/node": "7.12.16",
+    "@babel/preset-env": "7.12.16",
     "@babel/preset-react": "7.12.13",
     "@svgr/cli": "5.5.0",
     "babel-eslint": "10.1.0",
